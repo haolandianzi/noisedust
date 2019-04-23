@@ -1,0 +1,171 @@
+final String sql = "SELECT device.serialNumber FROM `device` where device.organizationID= '" + id.substring(2) + "'";
+
+haolandianzi
+
+haolandianzi123
+
+
+
+https://github.com/haolandianzi/noisedust.git
+
+
+61011308001320220781
+
+11607云水一路市政工程  对应云水一路（天谷五路）
+
+
+{"CONFIG","800","$CONFIG,77778,TCP,112.33.20.132,8068,0.0.0.0,8068,18910250007,1,000 006 007 019 020 021 022,10,";"LED","801","Hello,HaoLan,Hello,HaoLan";}
+{"CONFIG","800","$CONFIG,77778,TCP,112.33.20.132,8068,113.141.72.9,8069,13000000001,1,000 006 007 012 013 019 020 021 022,10,";"LED","801","Hello,HaoLan,Hello,HaoLan";}
+
+给新城发送数据：
+{"CONFIG","800","$CONFIG,77778,TCP,112.33.20.132,8068,111.21.51.194,8068,18910250007,1,000 006 007 012 013 019 020 021 022,10,";"LED","801","Hello,HaoLan,Hello,HaoLan";}
+
+mysqldump -u root -p noisedust temperature > F:\GXshuju0318\temperature20181104.sql
+
+
+
+
+修改字段类型，长度：
+alter table windspeed modify column pointID varchar(24);
+
+
+
+SELECT * from pm10 WHERE pointID LIKE '11%' or pointID LIKE '12%' AND time between '2018-11-04 20:00:00' and '2019-03-15 20:00:00'
+
+处理器：i5 4核
+内存：8G
+硬盘：300G
+
+
+
+
+
+
+西安市西三环与富鱼路十字西北角绿地鸿海大厦B座1002
+
+ZQ
+159实体机TV:1413213054
+
+
+15037Y西安筑路机械厂棚户区改造DK-2项目,视频画面花了。
+
+
+BETWEEN date_add(now(), INTERVAL - 1440 MINUTE)
+				AND now()
+
+灞桥区：
+baqiaoxrk9
+123456
+qazwsx123456..
+新城区：
+xinchengxrk194
+123456
+qazwsx123456..
+
+
+
+
+在“API名称： 分页获取全部的监控点信息”中
+返回结果{
+    "timestamp": 1554111926287,
+    "status": 500,
+    "error": "Internal Server Error",
+    "exception": "com.netflix.zuul.exception.ZuulException",
+    "message": "GENERAL"
+}
+我们要使用API网关里的取流服务
+你留的取流安装包是windows系统的，我在windwos系统上安装取流服务后，把IP指向linux的服务器，还是取不到。
+
+
+
+12053西安职业技术学院新校区1#楼，该项目已完工，没有入网日期，没有联系人，电话。
+12055济南拓兴电子科技有限公司212协议，没有入网日期，没有联系人，电话。
+11511西安高新区二次创业区经三十八路給水工程，入网日期2018-04-17
+
+
+
+
+
+
+
+
+
+//WF点击统计信息每日按钮时显示网格的复选框
+				$("#searchBtnMR").click(function(){
+					$("#OrlistShow").text("");
+			    	var getDisplay = $("#grids").css("display");
+					if(getDisplay == "none"){
+						$("#grids").css("display","block");
+						$("#OrlistShow").css("display","block");
+					}else{
+						$("#grids").css("display","none");
+						$("#OrlistShow").css("display","none");
+					};
+					$.ajax({
+						url: _ctx +"/Orlist.do",
+						type : "post",
+						dataType:"JSON",
+						success:function(OrgList){
+							//debugger;
+							for(i=0;i<OrgList.length;i++){
+								$("#OrlistShow").append("<div style=\"float:left;width:200px;margin:10px\"><input type=\"checkbox\" name=\"oname\" value=\""+OrgList[i].ID+"\">"+OrgList[i].name+"</div>");
+					 		} 
+						}
+					})	  		
+					
+				});
+				//点击每日，选择复选框，点击查询时显示信息
+				$('#searchBtnMR1').click(function(){
+					$("#getOrlistShow1").text("");
+					
+					var getDisplay = $("#OrlistShow").css("display");
+					var getDisplay1 = $("#getOrlistShow").css("display");
+					if(getDisplay == "block"){
+						$("#OrlistShow").css("display","none");
+						$("#getOrlistShow").css("display","block");
+					};
+					if(getDisplay1 == "none"){
+						$("#OrlistShow").css("display","none");
+						$("#getOrlistShow").css("display","block");
+						$("#DataList").css("display","none");
+						
+					};
+					$("#grids").css("display","none");
+		          	var ids = [];//定义一个空数组来接收每日多选框的值
+		          	$("input[name='oname']:checked").each(function() {
+		          		ids.push($(this).val());
+		          	}); 
+		          	alert(ids)
+			        $.ajax({
+						url: _ctx +"/getOrlist.do",
+						type : "post",
+						traditional: true,
+						dataType: "JSON", //数据格式:JSON
+						data: {ids : ids},
+						success:function(getOrlist){
+								//debugger;
+						for(i=0;i<getOrlist.length;i++){
+							
+							$("#getOrlistShow2").append("<tr><td style=\"width:100px;padding:5px;text-align:center\">"+getOrlist[i].serialNumber+"</td><td style=\"width:400px;padding:5px;text-align:center\">"+getOrlist[i].note+"</td><td style=\"width:100px;padding:5px;text-align:center\">"+getOrlist[i].state+"</td></tr>");
+				 		} 
+								
+						}
+					}); 
+			          
+					        
+				})
+
+
+
+
+
+
+
+2019-4-3
+rtsp://192.168.1.76:554/pag://192.168.1.75:7302:61011308001320220781:0:MAIN:TCP?streamform=rtp&checkinfo=ewogICAidGltZSIgOiAiMjAxOTA0MDRUMTQ0ODE5WiIsCiAgICJ1cmwiIDogInJ0c3A6Ly8xOTIuMTY4LjEuNzY6NTU0L3BhZzovLzE5Mi4xNjguMS43NTo3MzAyOjYxMDExMzA4MDAxMzIwMjIwNzgxOjA6TUFJTjpUQ1A%2Fc3RyZWFtZm9ybT1ydHAiCn0K&idinfo=EAAAAAAQAABkEmueOLSV1eJGVfkp%2BOqe13rfb5VheoCUX9v0QPSH7c%2Bs2xxvYqac1umJ5LTT9TQ%3D
+
+
+
+
+
+
